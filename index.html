@@ -1,40 +1,78 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cosmogoat</title>
+  <title>Cosmogoat - The Cosmic Goat</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { margin: 0; font-family: system-ui, sans-serif; background: #0a0a1f; color: white; }
-    .hero { background: linear-gradient(135deg, #2a0055, #000033); min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px; }
-    img { max-width: 100%; height: auto; border-radius: 20px; }
-    .gallery { padding: 60px 20px; background: #111; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
+    body { font-family: system-ui, sans-serif; }
+    .hero { background: linear-gradient(135deg, #1a0033, #4a1d6e, #0a0a2e); }
   </style>
 </head>
-<body>
+<body class="bg-black text-white">
 
-  <div class="hero">
-    <div>
-      <img src="https://ibb.co/0jPnN3bJ" alt="Cosmogoat">
-      <h1 style="font-size: 4.5rem; margin: 30px 0 10px;">Cosmogoat</h1>
-      <p style="font-size: 1.5rem; color: #a5b4fc;">La chèvre qui a pris les étoiles.</p>
+  <!-- Hero -->
+  <section class="hero min-h-screen flex items-center">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <img src="https://ibb.co/0jPnN3bJ" alt="Cosmogoat" class="mx-auto w-80 md:w-96 mb-8 rounded-3xl shadow-2xl">
+      <h1 class="text-6xl md:text-7xl font-bold mb-6">Cosmogoat</h1>
+      <p class="text-2xl md:text-3xl text-cyan-300 max-w-3xl mx-auto">The legendary goat that took the stars.</p>
+      <p class="mt-6 text-xl max-w-xl mx-auto">From meme to cosmic empire.</p>
     </div>
-  </div>
+  </section>
 
-  <div class="gallery">
-    <h2 style="text-align:center; font-size: 2.5rem; margin-bottom: 40px;">La Conquête Cosmique</h2>
-    <div class="grid">
-      <img src="https://ibb.co/W45Bj4wX" alt="Cosmogoat">
-      <img src="https://ibb.co/JwpRTCjh" alt="Cosmogoat">
-      <img src="https://ibb.co/21JzQhDk" alt="Cosmogoat">
-      <img src="https://ibb.co/3ytLw8Pt" alt="Cosmogoat">
-      <img src="https://ibb.co/5gJvDXt6" alt="Cosmogoat">
+  <!-- Narrative -->
+  <section class="py-20 bg-zinc-950">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-8">The Cosmic Goat</h2>
+      <p class="text-lg leading-relaxed text-gray-300">
+        While others talked about going to space, the GOAT actually did it. 
+        Cosmogoat is both the legendary astronaut goat and the rising interplanetary empire.
+        With humor, determination, and a touch of friendly competition, the goat colony is pushing the frontiers of the cosmos.
+      </p>
     </div>
-  </div>
+  </section>
 
-  <footer style="text-align:center; padding: 40px; background:#000;">
-    <p style="font-size: 1.3rem;">$COSMOGOAT — Conquering the cosmos, one hoof at a time.</p>
+  <!-- Tokenomics -->
+  <section class="py-20 bg-black">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-16">Tokenomics</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-zinc-900 p-10 rounded-3xl text-center">
+          <div class="text-6xl font-bold text-cyan-400">3%</div>
+          <p class="mt-6 text-xl">Buy / Sell Tax</p>
+        </div>
+        <div class="bg-zinc-900 p-10 rounded-3xl text-center border border-green-500/50">
+          <div class="text-6xl font-bold text-green-400">80%</div>
+          <p class="mt-6 text-xl">RWA SPCXB Dividends</p>
+        </div>
+        <div class="bg-zinc-900 p-10 rounded-3xl text-center">
+          <div class="text-6xl font-bold text-amber-400">10% + 10%</div>
+          <p class="mt-6 text-xl">Liquidity + Burn</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galerie -->
+  <section class="py-20 bg-zinc-950">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-12">The First Contact</h2>
+      <img src="https://ibb.co/hXvVY" class="rounded-3xl mx-auto shadow-2xl" alt="Human discovering Cosmogoat colony">
+    </div>
+  </section>
+
+  <!-- Buy -->
+  <section class="py-20 bg-black text-center">
+    <a href="#" onclick="alert('Link to Flap will be added upon launch')" 
+       class="inline-block bg-white text-black px-12 py-5 rounded-full text-2xl font-bold hover:bg-cyan-300 transition">
+      Buy $COSMOGOAT on Flap
+    </a>
+  </section>
+
+  <footer class="py-12 text-center border-t border-zinc-800">
+    <p class="text-xl">$COSMOGOAT — Conquering the cosmos, one hoof at a time.</p>
   </footer>
 </body>
 </html>
