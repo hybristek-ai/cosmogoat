@@ -3,35 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cosmogoat - The Cosmic Goat</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Cosmogoat</title>
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; background: #0a0a1f; color: white; }
+    .hero { background: linear-gradient(135deg, #2a0055, #000033); min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px; }
+    img { max-width: 100%; height: auto; border-radius: 20px; }
+    .gallery { padding: 60px 20px; background: #111; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
+  </style>
 </head>
-<body class="bg-black text-white">
+<body>
 
-  <!-- Hero -->
-  <div class="min-h-screen bg-gradient-to-br from-purple-950 via-indigo-950 to-black flex items-center justify-center">
-    <div class="text-center px-6">
-      <img src="https://ibb.co/0jPnN3bJ" alt="Cosmogoat" class="mx-auto w-80 md:w-96 mb-8 rounded-3xl">
-      <h1 class="text-6xl md:text-7xl font-bold mb-4">Cosmogoat</h1>
-      <p class="text-2xl text-cyan-300">La chèvre qui a pris les étoiles.</p>
+  <div class="hero">
+    <div>
+      <img src="https://ibb.co/0jPnN3bJ" alt="Cosmogoat">
+      <h1 style="font-size: 4.5rem; margin: 30px 0 10px;">Cosmogoat</h1>
+      <p style="font-size: 1.5rem; color: #a5b4fc;">La chèvre qui a pris les étoiles.</p>
     </div>
   </div>
 
-  <!-- Galerie -->
-  <div class="py-20 bg-zinc-950">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-12 text-white">La Conquête Cosmique</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <img src="https://ibb.co/W45Bj4wX" class="rounded-3xl w-full" alt="Cosmogoat">
-        <img src="https://ibb.co/JwpRTCjh" class="rounded-3xl w-full" alt="Cosmogoat">
-        <img src="https://ibb.co/21JzQhDk" class="rounded-3xl w-full" alt="Cosmogoat">
-        <img src="https://ibb.co/3ytLw8Pt" class="rounded-3xl w-full" alt="Cosmogoat">
-      </div>
+  <div class="gallery">
+    <h2 style="text-align:center; font-size: 2.5rem; margin-bottom: 40px;">La Conquête Cosmique</h2>
+    <div class="grid">
+      <img src="https://ibb.co/W45Bj4wX" alt="Cosmogoat">
+      <img src="https://ibb.co/JwpRTCjh" alt="Cosmogoat">
+      <img src="https://ibb.co/21JzQhDk" alt="Cosmogoat">
+      <img src="https://ibb.co/3ytLw8Pt" alt="Cosmogoat">
+      <img src="https://ibb.co/5gJvDXt6" alt="Cosmogoat">
     </div>
   </div>
 
-  <footer class="py-12 text-center">
-    <p class="text-xl">$COSMOGOAT — Conquering the cosmos, one hoof at a time.</p>
+  <footer style="text-align:center; padding: 40px; background:#000;">
+    <p style="font-size: 1.3rem;">$COSMOGOAT — Conquering the cosmos, one hoof at a time.</p>
   </footer>
 </body>
 </html>
